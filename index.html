@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Contatos</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<main>
+		<div class="header">
+			<h3 class="title">Lista de Contatos</h3>
+		</div>
+        <form>
+			<input type="hidden" name="id">
+				<input type="text" name="nome" id="" maxlength="50" placeholder="Nome" required>
+				<input type="text" name="telefone" id="" maxlength="15" placeholder="Número de Telefone" required>
+				<input type="submit" value="Adicionar">
+		</form>
+            <h4>Contatos</h4>
+            <div class="list-contact" id="listaContatos">
+				<input type="text" id="pesquisar" name="" placeholder="Pesquisar">
+				<ul>
+
+				</ul>
+			</div>
+    </main>
+
+	
+    <script type="module" src="js/script.js"></script>
+    <script type="module">
+        import { v4 as uuidv4 } from 'https://cdn.jsdelivr.net/npm/uuid@9.0.0/dist/esm-browser/index.js';
+        window.uuidv4 = uuidv4;
+    </script>
+</body>
+</html>

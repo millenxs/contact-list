@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	--color: #E1E1E1;
+	background-color: #F3F3F3;
+	background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+		linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+	background-size: 55px 55px;
+}
+
+main {
+	margin-top: 20px;
+	padding: 20px;
+	width: 80vh;
+	height: 80vh;
+	text-align: center;
+	background-color: #e8e8e8;
+	box-shadow: 20px 20px 60px #c5c5c5,
+		-20px -20px 60px #ffffff;
+ 	transition: 0.3s;
+	
+}
+
+.title {
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 36px;
+}
+
+input[type="text"]{
+	border: none;
+	border-radius: 12px;
+	padding: 5px;
+	outline-color: #e8e8e8;
+	background: #e8e8e8;
+	box-shadow: inset 20px 20px 60px #c5c5c5,
+		   inset -20px -20px 60px #ffffff;
+	transition: 0.3s;
+}
+
+input[type="submit"] {
+	padding: 8px 12px 8px 16px;
+	gap: 8px;
+	height: 40px;
+	width: 108px;
+	border: none;
+	background: #056bfa27;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background: #056bfa49;
+  }
+
+ul {
+	list-style-type: none; /* Remove os marcadores padrão da lista */
+	padding: 0; /* Remove o padding padrão */
+}
+
+li {
+	margin-bottom: 10px; /* Adiciona um espaçamento entre os itens da lista */
+	padding: 10px; /* Adiciona um padding interno aos itens */
+	border: 1px solid #ddd; /* Adiciona uma borda leve aos itens */
+	border-radius: 5px; /* Adiciona bordas arredondadas */
+	display: flex; /* Faz com que o conteúdo do li seja flexível */
+	align-items: center; /* Alinha verticalmente os itens ao centro */
+	position:relative;
+	
+}
+
+button {
+	background-color: none;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-excluir  {
+	color: red;
+}
+
+.info-item {
+	display: flex;
+
+}
+
+.info {
+	display: flex;
+}
