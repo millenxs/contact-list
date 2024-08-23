@@ -54,9 +54,8 @@ function listar(filtro=''){
             
             // Atualiza o conteúdo da linha
             linha.innerHTML = `
-			<div class="info">ID: <span class="info-item">${item.id}</span></div>
-			<div class="info">Nome: <span class="info-item">${item.nome}</span></div>
-			<div class="info">Telefone: <span class="info-item">${item.telefone}</span></div>
+			<div class="info">Nome: ${item.nome}</div>
+			<div class="info">Telefone: ${item.telefone}</div>
             `;
 
             linha.appendChild(excluirBtn);

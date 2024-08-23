@@ -84,11 +84,14 @@ button {
 	color: red;
 }
 
-.info-item {
-	display: flex;
-
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px; /* opcional, para espaçar as linhas */
 }
 
-.info {
-	display: flex;
+.info-item {
+    flex: 1;
+    text-align: right; /* para alinhar o texto à direita */
 }
